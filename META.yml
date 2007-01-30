@@ -1,0 +1,16 @@
+abstract: Compute digest of uploads with L<Digest>
+author: "\xC3\x86var Arnfj\xC3\xB6r\xC3\xB0 Bjarmason <avar@cpan.org>"
+build_requires: 
+  Test::More: 0
+distribution_type: module
+generated_by: Module::Install version 0.64
+license: perl
+name: Catalyst-Plugin-Upload-Digest
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Catalyst: 5.2
+  Digest: 0
+version: 0.01
