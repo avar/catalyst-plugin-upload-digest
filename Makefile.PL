@@ -9,6 +9,8 @@ abstract_from 'lib/Catalyst/Plugin/Upload/Digest.pm';
 version_from  'lib/Catalyst/Plugin/Upload/Digest.pm';
 license_from  'lib/Catalyst/Plugin/Upload/Digest.pm';
 
+no_index directory => 'examples';
+
 # lib/
 requires Catalyst => '5.2';
 requires 'Digest' => 0;

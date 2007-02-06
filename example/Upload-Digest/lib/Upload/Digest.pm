@@ -1,5 +1,4 @@
-package # Hide from PAUSE
-Upload::Digest;
+package Upload::Digest;
 
 =head1 NAME
 

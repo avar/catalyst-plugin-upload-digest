@@ -1,0 +1,8 @@
+2007-01-29  Ævar Arnfjörð Bjarmason <avar@cpan.org>
+     * Release 0.02 to CPAN, adding no_index to F<examples>
+     * Added a CAVEATS section to the POD explaining what the module doesn't do 
+     * Fixed typo in POD
+     * Capitalized B<Perl> in I<as Perl itself>
+
+2007-01-29  Ævar Arnfjörð Bjarmason <avar@cpan.org>
+     * Release 0.01 to CPAN

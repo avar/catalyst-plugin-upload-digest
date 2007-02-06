@@ -4,7 +4,7 @@ use strict;
 use Catalyst::Request::Upload;
 use Digest;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 {
     package Catalyst::Request::Upload;
@@ -46,7 +46,7 @@ Extends C<Catalyst::Request::Upload> with a L</digest> method that
 wraps L<Digest>'s L<construction|Digest/"OO INTERFACE"> method. Any
 arguments to it will be passed directly to Digest's constructor. The
 return value is the relevant digest object that has already been
-populated with the file handle of the uploaded file, so retriving its
+populated with the file handle of the uploaded file, so retrieving its
 digest will work as expected.
 
 =head1 EXAMPLE
@@ -54,6 +54,15 @@ digest will work as expected.
 This module is distributed with a Catalyst example application called
 B<Upload::Digest>, see the F<example/Upload-Digest> directory in this
 distribution for how to run it.
+
+=head1 CAVEATS
+
+To avoid being overly smart the C<digest> method does not cache the
+digest for a given upload object / algorithm pair. If it is required
+to get the digest for a given file at two separate places in the
+program the user may wish to store the result somewhere to improve
+performance, or no do so because the speed of popular digest is likely
+not to become a bottleneck for most files.
 
 =head1 BUGS
 
@@ -72,6 +81,6 @@ E<AElig>var ArnfjE<ouml>rE<eth> Bjarmason <avar@cpan.org>
 =head1 LICENSE
 
 This library is free software . You can redistribute it and/or modify it under
-the same terms as perl itself.
+the same terms as Perl itself.
 
 =cut
