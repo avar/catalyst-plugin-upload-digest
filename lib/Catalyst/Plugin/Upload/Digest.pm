@@ -4,8 +4,6 @@ use strict;
 use Catalyst::Request::Upload;
 use Digest;
 
-our $VERSION = '0.02';
-
 {
     package Catalyst::Request::Upload;
 
