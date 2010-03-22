@@ -1,3 +1,12 @@
+Revision history for Catalyst::Plugin::Upload::Digest
+
+{{$NEXT}}
+
+0.03 2010-03-22 11:54:31
+    - Re-upload to the CPAN after deleting it. Turns out it was
+      actually being used. The module still uses some 2005-isms that
+      are frowned upon in Catalyst today, but it works.x
+
 2007-01-29  Ævar Arnfjörð Bjarmason <avar@cpan.org>
      * Release 0.02 to CPAN, adding no_index to F<examples>
      * Added a CAVEATS section to the POD explaining what the module doesn't do 
